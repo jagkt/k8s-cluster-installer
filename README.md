@@ -35,8 +35,8 @@ The project is designed for home labs, test environments, and repeatable Kuberne
         | Docker  |      | Docker  |      | Docker  |
         | Engine  |      | Engine  |      | Engine  |
         +---------+      +---------+      +---------+
-        |                         |
-        +------ Kubernetes -------+
+        |                         |                 |
+        +------ Kubernetes -------------------------+
                   |
               containerd
                   |
