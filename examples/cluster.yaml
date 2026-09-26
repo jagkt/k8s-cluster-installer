@@ -1,0 +1,33 @@
+cluster:
+  name: homelab
+  kubernetes_version: "1.36"
+  pod_cidr: "10.244.0.0/16"
+  service_cidr: "10.96.0.0/12"
+  endpoint: ""
+
+cni:
+  name: flannel
+
+docker:
+  enabled: true
+  install_compose: false
+
+ssh:
+  user: root
+  port: 22
+
+nodes:
+  - name: master01
+    ip: 192.168.146.135
+    role: master
+    os: auto
+
+  - name: worker01
+    ip: 192.168.146.136
+    role: worker
+    os: auto
+
+  # - name: worker02
+  #   ip: 192.168.56.12
+  #   role: worker
+  #   os: auto
